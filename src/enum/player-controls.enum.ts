@@ -1,13 +1,13 @@
 export enum PlayerWinrarControlsEnum {
-    top = 38,
-    left = 37,
-    right = 39,
-    bottom = 40 
+  WINTOP = 38,
+  WINLEFT = 37,
+  WINRIGHT = 39,
+  WINBOTTOM = 40,
 }
 
 export enum PlayerZipControlsEnum {
-    top = 87,
-    left = 65,
-    right = 68,
-    bottom = 83 
+  ZIPTOP = 87,
+  ZIPLEFT = 65,
+  ZIPRIGHT = 68,
+  ZIPBOTTOM = 83,
 }

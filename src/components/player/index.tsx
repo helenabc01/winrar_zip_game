@@ -1,18 +1,31 @@
-import * as S from './style'
+import * as S from "./style";
 
-interface IPlayerProps{
-    id: number,
-    color: string
+interface IPlayerProps {
+  id: number;
+  color: string;
+  positionLeft: number;
+  positionBottom: number;
+  isJumping: boolean;
+  jumpHeight: number;
 }
 
-const Player = ({id, color}: IPlayerProps) => {         
-    return(
-        <S.PlayerWrapper color={color} positionLeft={0} positionBottom={0}>
-            <img src="" alt={color} />
-        </S.PlayerWrapper>
-    )
-}
+const Player = ({
+  id,
+  color,
+  positionLeft,
+  positionBottom,
+  isJumping,
+  jumpHeight,
+}: IPlayerProps) => {
+  return (
+    <S.PlayerWrapper
+      color={color}
+      position_left={positionLeft}
+      position_bottom={positionBottom + jumpHeight}
+    >
+      <img src="" alt={color} />
+    </S.PlayerWrapper>
+  );
+};
 
-
-
-export { Player }
+export { Player };
